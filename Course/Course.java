@@ -5,7 +5,7 @@ package Task_4;
  * @author dani
  */
 public class Course {
-    protected String name, ID, teacher;
+    protected String name, id, teacher;
     protected int duration;
         
     public void setName(String name){
@@ -20,9 +20,9 @@ public class Course {
         }
     }
     
-    public void setID(String ID){
-        if(ID.startsWith(name.substring(0, 1)) && ID.endsWith(teacher.substring(0, 1))){
-            this.ID = ID;
+    public void setId(String id){
+        if(id.startsWith(name.substring(0, 1)) && id.endsWith(teacher.substring(0, 1))){
+            this.id = id;
         }
     }
     
@@ -40,8 +40,8 @@ public class Course {
         return this.teacher;
     }
     
-    public String getID(){
-        return this.ID;
+    public String getId(){
+        return this.id;
     }
     
     public int getDuration(){
@@ -49,14 +49,14 @@ public class Course {
     }
   
     public String toString(){
-        return "Name: "+getName()+" | Teacher: "+getTeacher()+" | ID: "+getID()+" | Duration: "+getDuration();
+        return "Name: "+getName()+" | Teacher: "+getTeacher()+" | ID: "+getId()+" | Duration: "+getDuration();
     }
     
     public Course clone(){
         Course otro = new Course();
         otro.name = this.name;
         otro.teacher = this.teacher;
-        otro.ID = this.ID;
+        otro.id = this.id;
         otro.duration = this.duration;
         return otro;
     }
