@@ -9,26 +9,26 @@ public class BusinessCourse extends Course{
     public BusinessCourse(){
         this.setName("");
         this.setTeacher("");
-        this.setID("");
+        this.setId("");
         this.setDuration(30);
     }
     
-    public BusinessCourse(String name, String teacher, String ID, int duration){
+    public BusinessCourse(String name, String teacher, String id, int duration){
         this.setName(name);
         this.setTeacher(teacher);
-        this.setID(ID);
+        this.setId(id);
         this.setDuration(30);
     }
     
     public String toString(){
-        return "Name: "+getName()+" | Teacher: "+getTeacher()+" | ID: "+getID()+" | Duration: "+getDuration()+" with an internship that lasts for at least 15 hours.";
+        return "Name: "+getName()+" | Teacher: "+getTeacher()+" | ID: "+getId()+" | Duration: "+getDuration()+" with an internship that lasts for at least 15 hours.";
     }
     
     public Course clone(){
         Course otro = new Course();
         otro.setName(this.name);
         otro.setTeacher(this.teacher);
-        otro.setID(ID);
+        otro.setId(id);
         otro.setDuration(duration);
         return otro;
     }
