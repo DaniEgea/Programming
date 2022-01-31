@@ -8,6 +8,27 @@ public class Course {
     protected String name, id, teacher;
     protected int duration;
     
+    public Course(){
+        name = "";
+        id = "";
+        teacher = "";
+        duration = 0;
+    }
+    
+    public Course(String name, String id, String teacher, int duration){
+        this.setName(name);
+        this.setTeacher(teacher);
+        this.setId(id);
+        this.setDuration(duration);
+    }
+    
+    public Course(Course copia){
+        copia.name = this.name;
+        copia.teacher = this.teacher;
+        copia.id = this.id;
+        copia.duration = this.duration;
+    }
+    
     public void setName(String name){
         if(name.length()>=4){
             this.name = name;
