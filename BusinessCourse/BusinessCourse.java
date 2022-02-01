@@ -5,19 +5,32 @@ package Task_4;
  * @author dani
  */
 public class BusinessCourse extends Course{
+    protected int internship;
     
+    /**
+     * This is the constructor by default.
+     */
     public BusinessCourse(){
         this.setName("");
         this.setTeacher("");
         this.setId("");
         this.setDuration(30);
+        this.internship = 15;
     }
     
-    public BusinessCourse(String name, String teacher, String id, int duration){
+    /**
+     * This is the constructor with parameters.
+     * @param name is the name of the Business Course.
+     * @param teacher is the name of the teacher.
+     * @param id is the identification of the course.
+     * @param duration is the duration of the course.
+     */
+    public BusinessCourse(String name, String teacher, String id){
         this.setName(name);
         this.setTeacher(teacher);
         this.setId(id);
         this.setDuration(30);
+        this.internship = 15;
     }
     
     public String toString(){
