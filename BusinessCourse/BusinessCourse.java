@@ -5,7 +5,7 @@ package Task_4;
  * @author dani
  */
 public class BusinessCourse extends Course{
-    private int internship;
+    protected int internship;
     
     /**
      * This is the constructor by default.
