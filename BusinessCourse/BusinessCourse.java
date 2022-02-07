@@ -34,6 +34,17 @@ public class BusinessCourse extends Course{
     }
     
     /**
+     * This is a copy constructor.
+     * @param copy is the object name.
+     */
+    public BusinessCourse(BusinessCourse copy){
+        copy.name = this.name;
+        copy.teacher = this.teacher;
+        copy.id = this.id;
+        copy.duration = this.duration;
+    }
+    
+    /**
      * This method return all the values.
      * @return a String.
      */
