@@ -33,10 +33,18 @@ public class BusinessCourse extends Course{
         this.internship = 15;
     }
     
+    /**
+     * This method return all the values.
+     * @return a String.
+     */
     public String toString(){
         return "Name: "+getName()+" | Teacher: "+getTeacher()+" | ID: "+getId()+" | Duration: "+getDuration()+" with an internship that lasts for at least 15 hours.";
     }
     
+    /**
+     * This method clone the object Course.
+     * @return an Course object.
+     */
     public Course clone(){
         Course otro = new Course();
         otro.setName(this.name);
@@ -46,6 +54,11 @@ public class BusinessCourse extends Course{
         return otro;
     }
     
+    /**
+     * This method compare two objects.
+     * @param otro is the name of the course object.
+     * @return a Boolean.
+     */
     public boolean equals(Course otro){
         if(otro == this){
             return true;
