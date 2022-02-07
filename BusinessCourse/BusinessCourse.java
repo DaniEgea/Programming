@@ -20,7 +20,7 @@ public class BusinessCourse extends Course{
     
     /**
      * This is the constructor with parameters.
-     * @param name is the name of the Business Course.
+     * @param name is the name of the course.
      * @param teacher is the name of the teacher.
      * @param id is the identification of the course.
      * @param duration is the duration of the course.
@@ -35,7 +35,7 @@ public class BusinessCourse extends Course{
     
     /**
      * This method set the name of course.
-     * @param name 
+     * @param name is the name of the Course.
      */
     public void setName(String name){
         if(name.length()>=4){
@@ -45,7 +45,7 @@ public class BusinessCourse extends Course{
     
     /**
      * This method set the name of the teacher.
-     * @param teacher is the name.
+     * @param teacher is the name of the Teacher.
      */
     public void setTeacher(String teacher){
         String nombre = teacher.substring(teacher.indexOf(",")+1);
@@ -56,7 +56,7 @@ public class BusinessCourse extends Course{
     
     /**
      * This method set the ID of the course.
-     * @param id 
+     * @param id  is the ID of the Course.
      */
     public void setId(String id){
         if(id.startsWith(name.substring(0, 1)) && id.endsWith(teacher.substring(0, 1))){
@@ -66,7 +66,7 @@ public class BusinessCourse extends Course{
     
     /**
      * This method set the duration of the course.
-     * @param duration 
+     * @param duration is the duration of the Course.
      */
     public void setDuration(int duration){
         if(duration >= 30){
@@ -100,16 +100,24 @@ public class BusinessCourse extends Course{
     
     /**
      * This method return the course's duration.
-     * @return 
+     * @return an Integer.
      */
     public int getDuration(){
         return this.duration;
     }
     
+    /**
+     * This method return all the values.
+     * @return a String.
+     */
     public String toString(){
         return "Name: "+getName()+" | Teacher: "+getTeacher()+" | ID: "+getId()+" | Duration: "+getDuration()+" with an internship that lasts for at least 15 hours.";
     }
     
+    /**
+     * This method clone the object Course.
+     * @return an Course object.
+     */
     public Course clone(){
         Course otro = new Course();
         otro.setName(this.name);
@@ -119,6 +127,11 @@ public class BusinessCourse extends Course{
         return otro;
     }
     
+    /**
+     * This method compare two objects.
+     * @param otro is the name of the course object.
+     * @return a Boolean.
+     */
     public boolean equals(Course otro){
         if(otro == this){
             return true;
