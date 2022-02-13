@@ -38,10 +38,11 @@ public class BusinessCourse extends Course{
      * @param copy is the object name.
      */
     public BusinessCourse(BusinessCourse copy){
-        copy.name = this.name;
-        copy.teacher = this.teacher;
-        copy.id = this.id;
-        copy.duration = this.duration;
+        this.name = copy.name;
+        this.teacher = copy.teacher;
+        this.id = copy.id;
+        this.duration = copy.duration;
+        this.internship = copy.internship
     }
     
     /**
@@ -126,15 +127,16 @@ public class BusinessCourse extends Course{
     }
     
     /**
-     * This method clone the object Course.
-     * @return an Course object.
+     * This method clone the BusinessCourse Course.
+     * @return an BusinessCourse object.
      */
-    public Course clone(){
-        Course otro = new Course();
+    public BusinessCourse clone(){
+        BusinessCourse otro = new BusinessCourse();
         otro.setName(this.name);
         otro.setTeacher(this.teacher);
         otro.setId(id);
         otro.setDuration(duration);
+        otro.internship = this.internship;
         return otro;
     }
     
@@ -143,7 +145,7 @@ public class BusinessCourse extends Course{
      * @param otro is the name of the course object.
      * @return a Boolean.
      */
-    public boolean equals(Course otro){
+    public boolean equals(BusinessCourse otro){
         if(otro == this){
             return true;
         }
