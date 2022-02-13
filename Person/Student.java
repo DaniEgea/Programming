@@ -1,5 +1,5 @@
-package Task_4.Programming.Course;
-
+package Task_4.Person;
+import Task_4.Course;
 /**
  *
  * @author dani
@@ -52,6 +52,18 @@ public class Student extends Person{
     
     public String toString(){
         return "Name: "+getName()+" | Surname: "+getSurname()+" | Email: "+getEmail()+" | Course: "+this.c.getName()+" | Identification: "+this.c.getID();
+    }
+    
+    public boolean equals(Student other){
+        if(this == other){
+            return true;
+        }
+        return false;
+    }
+    
+    public Student clone(){
+        Student other = new Student(this);
+        return other;
     }
     
 }
