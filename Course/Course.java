@@ -40,10 +40,10 @@ public class Course {
      * @param copy is the object name.
      */
     public Course(Course copy){
-        copy.name = this.name;
-        copy.teacher = this.teacher;
-        copy.id = this.id;
-        copy.duration = this.duration;
+        this.name = copy.name;
+        this.teacher = copy.teacher;
+        this.id = copy.id;
+        this.duration = copy.duration;
     }
     
     /**
