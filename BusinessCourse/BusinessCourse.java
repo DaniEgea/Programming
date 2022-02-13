@@ -53,11 +53,11 @@ public class BusinessCourse extends Course{
     }
     
     /**
-     * This method clone the object Course.
-     * @return an Course object.
+     * This method clone the object BusinessCourse.
+     * @return an BusinessCourse object.
      */
-    public Course clone(){
-        Course otro = new Course();
+    public BusinessCourse clone(){
+        BusinessCourse otro = new BusinessCourse();
         otro.setName(this.name);
         otro.setTeacher(this.teacher);
         otro.setId(id);
@@ -67,10 +67,10 @@ public class BusinessCourse extends Course{
     
     /**
      * This method compare two objects.
-     * @param otro is the name of the course object.
+     * @param otro is the name of the BusinessCourse object.
      * @return a Boolean.
      */
-    public boolean equals(Course otro){
+    public boolean equals(BusinessCourse otro){
         if(otro == this){
             return true;
         }
