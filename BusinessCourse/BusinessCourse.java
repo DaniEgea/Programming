@@ -38,10 +38,10 @@ public class BusinessCourse extends Course{
      * @param copy is the object name.
      */
     public BusinessCourse(BusinessCourse copy){
-        copy.name = this.name;
-        copy.teacher = this.teacher;
-        copy.id = this.id;
-        copy.duration = this.duration;
+        this.name = copy.name;
+        this.teacher = copy.teacher;
+        this.id = copy.id;
+        this.duration = copy.duration;
     }
     
     /**
