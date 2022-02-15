@@ -20,7 +20,7 @@ public class BusinessCourse extends Course{
     
     /**
      * This is the constructor with parameters.
-     * @param name is the name of the Business Course.
+     * @param name is the name of the course.
      * @param teacher is the name of the teacher.
      * @param id is the identification of the course.
      * @param duration is the duration of the course.
@@ -127,7 +127,7 @@ public class BusinessCourse extends Course{
     }
     
     /**
-     * This method clone the object BusinessCourse.
+     * This method clone the BusinessCourse Course.
      * @return an BusinessCourse object.
      */
     public BusinessCourse clone(){
@@ -142,7 +142,7 @@ public class BusinessCourse extends Course{
     
     /**
      * This method compare two objects.
-     * @param otro is the name of the BusinessCourse object.
+     * @param otro is the name of the course object.
      * @return a Boolean.
      */
     public boolean equals(BusinessCourse otro){
