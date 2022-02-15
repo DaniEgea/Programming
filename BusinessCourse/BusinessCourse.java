@@ -142,7 +142,7 @@ public class BusinessCourse extends Course{
     
     /**
      * This method compare two objects.
-     * @param otro is the name of the course object.
+     * @param otro is the name of the BusinessCourse object.
      * @return a Boolean.
      */
     public boolean equals(BusinessCourse otro){
