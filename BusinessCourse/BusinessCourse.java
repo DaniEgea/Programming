@@ -42,6 +42,7 @@ public class BusinessCourse extends Course{
         this.teacher = copy.teacher;
         this.id = copy.id;
         this.duration = copy.duration;
+        this.internship = copy.internship;
     }
     
     /**
