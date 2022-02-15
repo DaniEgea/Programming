@@ -45,7 +45,7 @@ public class Course {
         this.id = copy.id;
         this.duration = copy.duration;
     }
-    
+
     /**
      * This method set the name of course.
      * @param name is the name of the Course.
