@@ -45,7 +45,7 @@ public class Course {
         this.id = copy.id;
         this.duration = copy.duration;
     }
-
+    
     /**
      * This method set the name of course.
      * @param name is the name of the Course.
@@ -132,21 +132,21 @@ public class Course {
      * @return an Course object.
      */
     public Course clone(){
-        Course otro = new Course();
-        otro.name = this.name;
-        otro.teacher = this.teacher;
-        otro.id = this.id;
-        otro.duration = this.duration;
-        return otro;
+        Course other = new Course();
+        other.name = this.name;
+        other.teacher = this.teacher;
+        other.id = this.id;
+        other.duration = this.duration;
+        return other;
     }
     
     /**
      * This method compare two objects.
-     * @param otro is the name of the course object.
+     * @param other is the name of the course object.
      * @return a Boolean.
      */
-    public boolean equals(Course otro){
-        if(otro == this){
+    public boolean equals(Course other){
+        if(this.getName().equals(other.getName()) && this.getTeacher().equals(other.getTeacher()) && this.getDuration() == other.getDuration() && this.getId().equals(other.getId())){
             return true;
         }
         return false;
