@@ -50,17 +50,30 @@ public class Student extends Person{
         c = new Course(other);
     }
     
+    /**
+     * This method return all the values.
+     * @return a String.
+     */
     public String toString(){
-        return "Name: "+getName()+" | Surname: "+getSurname()+" | Email: "+getEmail()+" | Course: "+this.c.getName()+" | Identification: "+this.c.getID();
+        return "Name: "+getName()+" | Surname: "+getSurname()+" | Email: "+getEmail()+" | Course: "+this.c.getName()+" | Identification: "+this.c.getId();
     }
     
+    /**
+     * This method compare two objects.
+     * @param other is the name of the Student object.
+     * @return a Boolean.
+     */
     public boolean equals(Student other){
-        if(this == other){
+        if(this.getName().equals(other.getName()) && this.getSurname().equals(other.getSurname()) && this.getEmail().equals(other.getEmail())){
             return true;
         }
         return false;
     }
     
+    /**
+     * This method clone the object Student.
+     * @return a Student object.
+     */
     public Student clone(){
         Student other = new Student(this);
         return other;
